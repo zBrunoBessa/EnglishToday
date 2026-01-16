@@ -242,6 +242,10 @@ function DayPhrases() {
           </div>
         </div>
 
+        <div className="phrases-hint">
+          Não traduza palavra por palavra, pense em como você diria essa expressão em inglês.
+        </div>
+
         <div className="phrases-list">
             {phrases.map((phrase, index) => {
               const userAnswer = userAnswers[phrase.id] || ''
@@ -261,9 +265,6 @@ function DayPhrases() {
 
                   <div className="answer-section">
                     <label htmlFor={`answer-${phrase.id}`}>Sua resposta:</label>
-                    <p className="answer-hint">
-                      Não traduza palavra por palavra, pense em como você diria essa expressão em inglês.
-                    </p>
                     <textarea
                       id={`answer-${phrase.id}`}
                       className="answer-input"

@@ -80,6 +80,25 @@
   text-align: center;
 }
 
+.phrases-hint {
+  margin: 0 auto 2rem auto;
+  max-width: 700px;
+  padding: 0.75rem 1rem;
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  color: var(--text-medium);
+  font-size: 0.95rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.dark .phrases-hint {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.75);
+}
+
 .phrases-header h1 {
   font-size: 1.75rem;
   color: var(--text-dark);
