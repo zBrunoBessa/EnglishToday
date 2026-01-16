@@ -162,6 +162,15 @@ function DayPhrases() {
     }
   }
 
+  const handleAnswerKeyDown = (event, phraseId) => {
+    if (event.key === 'Enter' && !event.shiftKey) {
+      event.preventDefault()
+      if (!showAnswers[phraseId]) {
+        handleCheckAnswer(phraseId)
+      }
+    }
+  }
+
   const handleReset = () => {
     setUserAnswers({})
     setShowAnswers({})
@@ -252,11 +261,15 @@ function DayPhrases() {
 
                   <div className="answer-section">
                     <label htmlFor={`answer-${phrase.id}`}>Sua resposta:</label>
+                    <p className="answer-hint">
+                      Não traduza palavra por palavra, pense em como você diria essa expressão em inglês.
+                    </p>
                     <textarea
                       id={`answer-${phrase.id}`}
                       className="answer-input"
                       value={userAnswer}
                       onChange={(e) => handleAnswerChange(phrase.id, e.target.value)}
+                      onKeyDown={(e) => handleAnswerKeyDown(e, phrase.id)}
                       placeholder="Digite sua resposta em inglês aqui..."
                       rows="1"
                       disabled={showAnswer}
