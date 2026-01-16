@@ -33,8 +33,8 @@ function DayPhrases() {
       if (data && Array.isArray(data) && data.length > 0) {
         const formattedPhrases = data.map((phrase, index) => ({
           id: phrase.QuestionID || `Q-${index + 1}`,
-          question: phrase.enSentence,
-          correct_answer: phrase.ptSentence,
+          question: phrase.ptSentence,
+          correct_answer: phrase.enSentence,
           explanation: `${phrase.grammarExplanation || ''} (${phrase.verbTense || ''} - Nível ${phrase.level || ''})`
         }))
         setPhrases(formattedPhrases)
