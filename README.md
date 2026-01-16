@@ -1,10 +1,10 @@
-# EnglishToday 🇬🇧
+# English Learn 🇬🇧
 
 Uma aplicação serverless para aprendizado de inglês com frases diárias geradas automaticamente.
 
 ## 📋 Descrição
 
-EnglishToday é uma plataforma de aprendizado de inglês que oferece 20 frases diárias para prática. O projeto utiliza arquitetura serverless AWS com Amplify, Lambda, DynamoDB e EventBridge.
+English Learn é uma plataforma de aprendizado de inglês que oferece 20 frases diárias para prática. O projeto utiliza arquitetura serverless AWS com Amplify, Lambda, DynamoDB e EventBridge.
 
 ## 🏗️ Arquitetura Serverless
 

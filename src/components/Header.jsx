@@ -18,7 +18,7 @@ function Header() {
       <div className="container">
         <div className="header-content">
           <Link to="/" className={`logo ${isActive('/') ? 'active' : ''}`}>
-            English Today
+            English Learn
           </Link>
           <nav className="nav">
             <Link to="/day-phrases" className={`nav-link ${isActive('/day-phrases') ? 'active' : ''}`}>
