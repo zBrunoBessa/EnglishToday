@@ -124,33 +124,36 @@
   line-height: 1;
 }
 
-.tip-text {
+.phrases-tips .tip-text {
   color: var(--text-dark);
   font-size: 0.9375rem;
   line-height: 1.6;
+  flex: 1;
 }
 
-.tip-text strong {
+.phrases-tips .tip-text strong {
+  color: #92400e;
+  display: inline !important;
+  margin-bottom: 0;
+}
+
+.phrases-tips .main-tip .tip-text strong {
   color: #92400e;
 }
 
-.main-tip .tip-text strong {
-  color: #92400e;
-}
-
-.secondary-tip .tip-text strong {
+.phrases-tips .secondary-tip .tip-text strong {
   color: #1e40af;
 }
 
-.dark .main-tip .tip-text strong {
+.dark .phrases-tips .main-tip .tip-text strong {
   color: #fbbf24;
 }
 
-.dark .secondary-tip .tip-text strong {
+.dark .phrases-tips .secondary-tip .tip-text strong {
   color: #60a5fa;
 }
 
-.dark .tip-text {
+.dark .phrases-tips .tip-text {
   color: rgba(255, 255, 255, 0.9);
 }
 
