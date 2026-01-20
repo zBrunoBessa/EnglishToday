@@ -294,7 +294,7 @@ function DayPhrases() {
                         onClick={() => handleUncheck(phrase.id)}
                         className="btn-secondary"
                       >
-                        ✕ Desverificar
+                        ✕ Ocultar Resposta
                       </button>
                     ) : (
                       <button
